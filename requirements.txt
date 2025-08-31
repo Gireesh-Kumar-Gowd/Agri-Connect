@@ -1,9 +1,10 @@
 streamlit
 streamlit-option-menu
-scikit-learn
+scikit-learn==1.6.1
 joblib
 pickle-mixin
 xgboost
 pandas
 numpy
 plotly
+
