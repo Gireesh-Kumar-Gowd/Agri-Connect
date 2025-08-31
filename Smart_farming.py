@@ -19,45 +19,30 @@ import os
 # Load Models 
 # ==============================
 
-# Base directory of the app
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_DIR = os.path.join(BASE_DIR, "models")  # put all .sav and .joblib files in this folder
-
 # Crop Recommendation Model
-crop_recommendation_model = pickle.load(
-    open(os.path.join(MODEL_DIR, "Crop_recommendation.sav"), "rb")
-)
+crop_recommendation_model = pickle.load(open("Crop_recommendation.sav", "rb"))
 
 # Yield Prediction Model
-yield_prediction_model = joblib.load(
-    os.path.join(MODEL_DIR, "Yield_predictor_compressed.joblib")
-)
+yield_prediction_model = joblib.load("Yield_predictor_compressed.joblib")
 
 # Price Prediction Model
-price_prediction_model = joblib.load(
-    os.path.join(MODEL_DIR, "Price_predictor.joblib")
-)
+price_prediction_model = joblib.load("Price_predictor.joblib")
 
 # ==============================
 # Load Scalers & Encoders
 # ==============================
 
 # Crop Recommendation
-scaler_cr = pickle.load(
-    open(os.path.join(MODEL_DIR, "Scaler(CR).sav"), "rb")
-)
-label_encoder_cr = joblib.load(
-    os.path.join(MODEL_DIR, "label_encoder(CR).joblib")
-)
+scaler_cr = pickle.load(open("Scaler(CR).sav", "rb"))
+label_encoder_cr = joblib.load("label_encoder(CR).joblib")
 
 # Yield Prediction
-scaler_yp = joblib.load(
-    os.path.join(MODEL_DIR, "Scaler(YP).joblib")
-)
+scaler_yp = joblib.load("Scaler(YP).joblib")
 
 # Price Prediction
-with open(os.path.join(MODEL_DIR, "Scaler(PP).sav"), "rb") as f:
+with open("Scaler(PP).sav", "rb") as f:
     scaler_pp = pickle.load(f)
+
 
 
 # Sidebar menu
@@ -357,6 +342,7 @@ elif selected == "Price Prediction":
 
            
         
+
 
 
 
