@@ -12,48 +12,53 @@ import pickle
 import joblib
 import streamlit as st
 from streamlit_option_menu import option_menu
+import os
 
 
 # ==============================
-# Load Models
+# Load Models 
 # ==============================
 
-# Crop Recommendation Model (Pickle - binary)
+# Base directory of the app
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_DIR = os.path.join(BASE_DIR, "models")  # put all .sav and .joblib files in this folder
+
+# Crop Recommendation Model
 crop_recommendation_model = pickle.load(
-    open(r"C:\Users\HP\OneDrive\Documents\projects\AgriConnect\Crop_recommendation.sav", "rb")
+    open(os.path.join(MODEL_DIR, "Crop_recommendation.sav"), "rb")
 )
 
-# --- Load the compressed Random Forest model ---
+# Yield Prediction Model
 yield_prediction_model = joblib.load(
-    r"C:\Users\HP\OneDrive\Documents\projects\AgriConnect\Yield_predictor_compressed.joblib"
+    os.path.join(MODEL_DIR, "Yield_predictor_compressed.joblib")
 )
 
-
-# Price Prediction Model (Pickle - binary)
+# Price Prediction Model
 price_prediction_model = joblib.load(
-    r"C:\Users\HP\OneDrive\Documents\projects\AgriConnect\Price_predictor.joblib"
+    os.path.join(MODEL_DIR, "Price_predictor.joblib")
 )
+
 # ==============================
 # Load Scalers & Encoders
 # ==============================
 
 # Crop Recommendation
 scaler_cr = pickle.load(
-    open(r"C:\Users\HP\OneDrive\Documents\projects\AgriConnect\Scaler(CR).sav", "rb")
+    open(os.path.join(MODEL_DIR, "Scaler(CR).sav"), "rb")
 )
 label_encoder_cr = joblib.load(
-    r"C:\Users\HP\OneDrive\Documents\projects\AgriConnect\label_encoder(CR).joblib"
+    os.path.join(MODEL_DIR, "label_encoder(CR).joblib")
 )
 
 # Yield Prediction
-
 scaler_yp = joblib.load(
-    r"C:\Users\HP\OneDrive\Documents\projects\AgriConnect\Scaler(YP).joblib"
+    os.path.join(MODEL_DIR, "Scaler(YP).joblib")
 )
 
 # Price Prediction
-with open(r"C:\Users\HP\OneDrive\Documents\projects\AgriConnect\Scaler(PP).sav", "rb") as f:
+with open(os.path.join(MODEL_DIR, "Scaler(PP).sav"), "rb") as f:
     scaler_pp = pickle.load(f)
+
 
 # Sidebar menu
 with st.sidebar:
@@ -352,5 +357,6 @@ elif selected == "Price Prediction":
 
            
         
+
 
 
