@@ -1,4 +1,4 @@
-🌾 Agri Cnnect
+🌾 Agri Connect
 
 
 Tap the following link to view the app - https://agri-connect-by-gireesh.streamlit.app
@@ -11,6 +11,8 @@ AGRIconnect is a Machine Learning–based web application designed to assist far
 The platform focuses on leveraging soil parameters, environmental factors, and predictive analytics to improve agricultural productivity and sustainability.
 
 📌 Screenshots and demo images will be added below.
+
+______________________________________________________________________________________________________________________________________________________
 
 
 🚨 DISCLAIMER
