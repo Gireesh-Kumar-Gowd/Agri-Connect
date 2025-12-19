@@ -23,7 +23,7 @@ The datasets and predictions used in Agri Connect are for educational and experi
 ❗ Do NOT use this system directly for real farming decisions.
 The triggered results are indicative and demonstrate how ML can be applied to precision agriculture at scale, provided verified and authentic datasets are used.
 
-
+______________________________________________________________________________________________________________________________________________________
 💡 MOTIVATION
 
 Agriculture is the backbone of many economies, especially in countries like India, where a significant portion of the population depends on farming for livelihood.
@@ -45,7 +45,7 @@ Optimize resource utilization
 Support sustainable farming practices
 
 
-
+______________________________________________________________________________________________________________________________________________________
 🚀 FEATURES
 
 🌱 Crop Recommendation System
@@ -62,7 +62,7 @@ Historical agricultural patterns
 
 <img width="1918" height="911" alt="image" src="https://github.com/user-attachments/assets/649f9484-7276-41e5-8342-cbc2be938480" />
 
-
+___________________________________________________________________________
 🌾 Yield Prediction System
 
 Estimates the expected crop yield using:
@@ -79,6 +79,7 @@ Past yield data and ML models
 
 <img width="1919" height="911" alt="image" src="https://github.com/user-attachments/assets/b8632de1-bd87-471c-b14b-b524ffe39a00" />
 
+___________________________________________________________________________
 
 💰 Crop Price Prediction System
 
@@ -97,7 +98,7 @@ Market-driven data analysis
 <img width="1919" height="914" alt="image" src="https://github.com/user-attachments/assets/4604014a-fc93-460e-9f9f-05f1183650ad" />
 
 
-
+______________________________________________________________________________________________________________________________________________________
 📂 DATA SOURCES
 
 From Kaggle Datasets.
@@ -108,7 +109,7 @@ Publicly available agriculture and soil datasets
 (Used strictly for learning and experimentation)
 
 
-
+______________________________________________________________________________________________________________________________________________________
 🛠️ BUILT WITH
 
 Python
@@ -119,7 +120,7 @@ Pandas, NumPy, Matplotlib
 
 Jupyter Notebooks
 
-
+______________________________________________________________________________________________________________________________________________________
 🚀 DEPLOYMENT
 
 Deployed using Streamlit
@@ -130,7 +131,7 @@ Hosting platform: Streamlit Cloud community
 
 ⏳ Note: The application may take some time to load.
 
-
+______________________________________________________________________________________________________________________________________________________
 💻 HOW TO USE
 
 Enter soil nutrient values (N, P, K)
@@ -141,7 +142,7 @@ Submit the data to receive crop recommendations , Yield Predictions , price Pred
 
 Analyze insights to support crop planning decisions
 
-
+______________________________________________________________________________________________________________________________________________________
 🛠️ HOW TO RUN LOCALLY
 
 Prerequisites
@@ -168,7 +169,7 @@ python app.py
 
 Open the localhost URL displayed at the top to access AgriConnect in your browser.
 
-
+______________________________________________________________________________________________________________________________________________________
 📈 FUTURE IMPROVEMENTS
 
 ✅ Integrate real-time weather APIs
@@ -183,7 +184,7 @@ Open the localhost URL displayed at the top to access AgriConnect in your browse
 
 ✅ Modularize ML pipelines
 
-
+______________________________________________________________________________________________________________________________________________________
 🤝 CONTRIBUTIONS
 
 Contributions are welcome!
@@ -198,11 +199,11 @@ Submit pull requests
 
 Please follow standard contribution guidelines.
 
-
+______________________________________________________________________________________________________________________________________________________
 📜 LICENSE
 
 This project is licensed under the GNU General Public License (GPL).
-
+______________________________________________________________________________________________________________________________________________________
 📞 CONTACT
 
 If you have any questions, suggestions, or would like to collaborate:
