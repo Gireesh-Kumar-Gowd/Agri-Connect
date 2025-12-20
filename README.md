@@ -167,7 +167,7 @@ pip install -r requirements.txt
 
 python app.py
 
-Open the localhost URL displayed at the top to access AgriConnect in your browser.
+Open the URL displayed at the top to access AgriConnect in your browser.
 
 ______________________________________________________________________________________________________________________________________________________
 📈 FUTURE IMPROVEMENTS
